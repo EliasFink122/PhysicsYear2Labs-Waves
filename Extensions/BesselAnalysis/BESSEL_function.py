@@ -229,18 +229,19 @@ def fit_bessel(
     
     return D_trans, D_phase
 
-# Example usage:
+if __name__ == "__main__":
+    # Example usage:
     
-# First you must import this function from your code: e.g.
-#     import fit_bessel from BESSEL
-#
-# Then you can use it like this:
-    
-trans_data = [0.04, 0.04]
-trans_periods = [70, 100]
-phase_data = [5]
-phase_periods = [70]
+    # First you must import this function from your code: e.g.
+    #     import fit_bessel from BESSEL
+    #
+    # Then you can use it like this:
 
-D_trans, D_phase = fit_bessel(trans_data, trans_periods, phase_data, phase_periods)
+    trans_data = [0.04, 0.04]
+    trans_periods = [70, 100]
+    phase_data = [5]
+    phase_periods = [70]
 
-print(f"D_trans={D_trans}, D_phase={D_phase}")
+    D_trans, D_phase = fit_bessel(trans_data, trans_periods, phase_data, phase_periods)
+
+    print(f"D_trans={D_trans}, D_phase={D_phase}")
